@@ -88,10 +88,13 @@ gpio_put(LED_R, 1);
 gpio_put(LED_B, 0);  
 gpio_put(LED_G, 0);
 }
-void azul(){
+void azul(int tempo){
 gpio_put(LED_R, 0); 
 gpio_put(LED_B, 1); 
 gpio_put(LED_G, 0); 
+sleep_ms(tempo);
+apagar();
+sleep_ms(tempo);
 }
 void verde(){
 gpio_put(LED_R, 0); 

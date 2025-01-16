@@ -42,10 +42,7 @@ void mostrarEnigma()
     {
         if (segredo[i] == 'A')
         {
-            azul();
-            sleep_ms(500);
-            apagar();
-            sleep_ms(500);
+            azul(1000);
         }
         else if (segredo[i] == 'B')
         {
@@ -92,7 +89,7 @@ int main()
             if (gpio_get(BUTTON_A) == 0)
             {
                 // gpio_put(LED_B, 1);
-                azul();
+                azul(1000);
                 botao = 'A';
                 sleep_ms(300);
                 apagar();
