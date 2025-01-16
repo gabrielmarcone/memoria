@@ -48,7 +48,7 @@ amarelo();
 sleep_ms(200);
 rosa();
 sleep_ms(200);
-azul();
+azul(3000);
 sleep_ms(200);
 verde();
 sleep_ms(200);

@@ -91,9 +91,6 @@ int main()
                 // gpio_put(LED_B, 1);
                 azul(1000);
                 botao = 'A';
-                sleep_ms(300);
-                apagar();
-                sleep_ms(300);
             }
             else if (gpio_get(BUTTON_B) == 0)
             {
